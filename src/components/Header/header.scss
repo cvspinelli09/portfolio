@@ -1,0 +1,29 @@
+.header {
+    height: 90px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-container {
+        margin-left: 30px;
+        img {
+            width: 300px;   
+        }
+    }
+    .header-options {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 30px;
+
+        .option {
+            padding: 10px 15px;
+            color: #FDD900;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}

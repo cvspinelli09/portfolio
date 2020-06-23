@@ -1,0 +1,232 @@
+.emailpage2-container {
+    background: rgb(236, 235, 235);
+    padding: 30px;
+
+    .top-header-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url(../../assets/green-background.png);
+
+        .logo-img {
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            background: rgb(24, 24, 24);
+            
+        }
+
+        .top-header-text {
+            margin-top: 0px;
+            margin: 20px0 40px 0 40px;
+            padding: 0 40px;
+            align-items: center;
+
+            h4, p {
+                text-align: center;
+                color: lightgrey;
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            h1 {
+                text-align: center;
+                color: rgb(240, 240, 240);
+                font-size: 3rem;
+                margin: 0 120px;
+                line-height: 60px;
+            }
+        }
+        .form-container {
+            width: 80%;
+            height: 500px;
+            display: flex;
+            margin: auto;
+            background: rgb(251, 248, 243);
+            margin-top: 50px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+            .form {
+                width: 65%;
+                padding: 0;
+                margin: 0;
+            
+            form {
+                width: 100%;
+            }
+
+                h2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 90px;
+                    color: rgb(3, 82, 87);
+                }
+                p {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    color: rgb(169, 30, 30);
+                    font-weight: 600;
+                }
+
+                input {
+                    width: 75%;
+                    height: 48px;
+                    padding: 0;
+                    margin: 10px 70px;
+                    background: white;
+                    border: 1px solid lightgray;
+                    border-radius: 6px;
+                    padding-left: 10px;
+                }
+                button {
+                    width: 77%;
+                    height: 55px;
+                    margin: 10px 70px;
+                    padding: 10px 20px;
+                    color: rgb(12, 12, 12);
+                    background: rgb(255, 211, 1);
+                    border: none;
+                    border-radius: 6px;
+                    margin-bottom: 50px;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                }
+            }
+            .testimonials {
+                width: 35%;
+                border-left: 2px solid rgb(228, 228, 228);
+                margin: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                .testim1 {
+                    height: 50%;
+                    width: 80%;
+                    img, h2, p h4 {
+                        font-size: 1.1rem;
+                        margin: 0;
+                    }
+                    h2, h4 {
+                        color: rgb(3, 82, 87);
+                    }
+                }
+                .testim2 {
+                    border-top: 2px solid rgb(228, 228, 228);
+                    height: 50%;
+                    width: 80%;
+                    margin-top: 10px;
+                    img, h2, p h4 {
+                        font-size: 1.1rem;
+                        margin: 0;
+                    }
+                    h2, h4 {
+                        color: rgb(3, 82, 87);
+                    }
+                }
+            }
+        }
+    }
+    .middle-section {
+        width: 100%;
+        margin-top: 350px;
+        color: rgb(3, 82, 87);
+
+        .middle-title {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 70%;
+            margin: auto;
+
+            .grid-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                .numbers {
+                    margin: 0;
+                    text-align: center;
+                    font-size: 1.8rem;
+                }
+                h1 {
+                    opacity: 0.05;
+                    font-size: 7rem;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        .middle-section-teacher {
+            width: 80%;
+            margin: auto;
+            margin-top: 90px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .left-side-teacher {
+                width: 55%;
+                text-align: start;
+                line-height: 45px;
+                margin-left: 8px;
+                p {
+                    color: rgba(29, 28, 28, 0.817);
+                    line-height: 30px;
+                }
+            }
+            .right-side-teacher {
+                width: 45%;
+                display: flex;
+                justify-content: flex-end;
+                // margin-left: 30px;
+            }
+        }
+    }
+    .bottom-section {
+        width: 100%;
+        margin-top: 90px;
+        height: 450px;
+        background: url(../../assets/green-background.png);
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 3.5rem;
+            padding-top: 45px;
+        }
+        p {
+            color: lightgray;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            line-height: 30px;
+            font-size: 1.2rem;
+        }
+        button {
+            width: 35%;
+            margin: auto;
+            height: 65px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            border: none;
+            border-radius: 8px;
+            background: rgb(255, 211, 1);
+            color: rgb(22, 22, 22);
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
