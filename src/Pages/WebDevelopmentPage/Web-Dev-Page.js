@@ -17,24 +17,100 @@ const WebDevPage = (props) => {
     <div className="wd-app-container">
       <section>
         <div className="wd-panels-grid">
-          <a href="https://cvspinelli09.github.io/demographics/">
-            <img src={Img1} alt="" />
-          </a>
-          <a href="https://cvspinelli09.github.io/classic-car/">
-            <img src={Img5} alt="" />
-          </a>
-          <a href="https://cvspinelli09.github.io/buy-tickets/">
-            <img src={Img3} alt="" />
-          </a>
-          <a href="https://crwn-09-live.herokuapp.com/">
-            <img src={Img4} alt="" />
-          </a>
-          <a href="https://cvspinelli09.github.io/spinelli-my-weather/">
-            <img src={Img2} alt="" />
-          </a>
-          <a href="https://cvspinelli09.github.io/star_wars_cards/">
-            <img src={Img6} alt="" />
-          </a>
+          <div className="wd-container">
+            <img src={Img1} alt="" className="wd-image" />
+            <div className="wd-middle">
+              <div className="wd-text">
+                <a href="https://github.com/cvspinelli09/demographics">
+                  View Code
+                </a>
+              </div>
+              <div className="wd-text">
+                <a href="https://cvspinelli09.github.io/demographics/">
+                  View Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="wd-container">
+            <img src={Img5} alt="" className="wd-image" />
+            <div className="wd-middle">
+              <div className="wd-text">
+                <a href="https://github.com/cvspinelli09/classic-car">
+                  View Code
+                </a>
+              </div>
+              <div className="wd-text">
+                <a href="https://cvspinelli09.github.io/classic-car/">
+                  View Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="wd-container">
+            <img src={Img3} alt="" className="wd-image" />
+            <div className="wd-middle">
+              <div className="wd-text">
+                <a href="https://github.com/cvspinelli09/buy-tickets">
+                  View Code
+                </a>
+              </div>
+              <div className="wd-text">
+                <a href="https://cvspinelli09.github.io/buy-tickets/">
+                  View Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="wd-container">
+            <img src={Img4} alt="" className="wd-image" />
+            <div className="wd-middle">
+              <div className="wd-text">
+                <a href="https://github.com/cvspinelli09/ecom-clothing">
+                  View Code
+                </a>
+              </div>
+              <div className="wd-text">
+                <a href="https://crwn-09-live.herokuapp.com/">View Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="wd-container">
+            <img src={Img2} alt="" className="wd-image" />
+            <div className="wd-middle">
+              <div className="wd-text">
+                <a href="https://github.com/cvspinelli09/spinelli-my-weather">
+                  View Code
+                </a>
+              </div>
+              <div className="wd-text">
+                <a href="https://cvspinelli09.github.io/spinelli-my-weather/">
+                  View Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="wd-container">
+            <img src={Img6} alt="" className="wd-image" />
+            <div className="wd-middle">
+              <div className="wd-text">
+                <a href="https://github.com/cvspinelli09/star_wars_cards">
+                  View Code
+                </a>
+              </div>
+              <div className="wd-text">
+                <a href="https://cvspinelli09.github.io/star_wars_cards/">
+                  View Live
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </div>

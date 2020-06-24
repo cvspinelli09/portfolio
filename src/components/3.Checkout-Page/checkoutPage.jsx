@@ -110,7 +110,7 @@ class CheckoutPage extends React.Component {
                   <hr />
                   <div className='coupon-container'>
                     <input type='coupon' name='coupon' placeholder='Coupon Code' />
-                    <button type='button' name='button' placeholder='Apply' onClick={() => this.props.history.push("/upsell")}>Apply</button>
+                    <button type='button' name='button' placeholder='Apply' >Apply</button>
                   </div>
                   <hr />
                   
@@ -154,7 +154,7 @@ class CheckoutPage extends React.Component {
                       </div>
                     </div>
                   }
-                  <button type='button' name='button' placeholder='Place-order' onClick={() => this.props.history.push("/upsell")} >Place order</button>
+                  <button type='button' name='button' placeholder='Place-order'  >Place order</button>
                   <div className='money-back'>
                     <img alt='' src={Img5} />
                   </div>

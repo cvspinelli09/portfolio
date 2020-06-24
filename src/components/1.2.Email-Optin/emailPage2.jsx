@@ -29,7 +29,7 @@ const EmailPage2 = (props) => {
                             <input type='text' placeholder='Email address'></input>
                             <button 
                                 className='btn'
-                                onClick={() => props.history.push("/sales")}
+                                
                             >GIVE ME FREE ACCESS NOW!</button>
                         </form>
                     </div>
@@ -95,7 +95,7 @@ const EmailPage2 = (props) => {
             <div className='bottom-section'>
                 <h1>Get Free Access to The Course</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <button className='btn' onClick={() => props.history.push("/sales")} >START THE FREE COURSE NOW</button>
+                <button className='btn'  >START THE FREE COURSE NOW</button>
             </div>
         </div>
     );

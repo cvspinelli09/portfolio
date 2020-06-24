@@ -173,7 +173,7 @@ class SalesPage2 extends React.Component {
                     alt=""
                     src={Img5}
                     style={{ width: "300px" }}
-                    onClick={() => this.props.history.push("/checkout")}
+                    
                   />
                 </div>
               </div>
