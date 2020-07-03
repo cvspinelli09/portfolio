@@ -24,6 +24,9 @@
         font-size: 1.8rem;
         color: #FDD900;
         margin-left: 2rem;
+        @media (max-width:768px) {
+            font-size: 1rem;
+        }
     }
 
     @media (max-width: 768px) {
@@ -44,7 +47,9 @@
 
     }
     .hp-two {
-        margin-left: 28rem;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 18px;
         font-size: 1.8rem;
         font-weight: 600;
         @media (max-width: 768px) {
