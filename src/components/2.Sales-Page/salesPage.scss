@@ -1,109 +1,172 @@
-.sales-container {
-    width: 100%;
+.sp-app-container {
     height: 100vh;
     margin: 0;
     padding: 30px;
-}
-.upper-container {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    margin-right: 50px;
-    align-items: center;
+    @media (max-width:550px) {
+        padding: 0;
+    }
 }
 
-.upper-title{
+// sp-wrapper
+.sp-wrapper-container {
+    width: 100%;
+    border: 3px solid rgb(114, 114, 114);
+}
+
+// sp-top-header
+.sp-top-header {
+    width: 100%;
+    margin: 0 auto;
+}
+.sp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+.sp-warning {
+    width: 90%;
+    margin: auto;
     font-size: 1.2rem;
     font-weight: 700;
     color: rgb(28, 28, 28);
+    text-align: center;
     strong {
         color: rgb(209, 6, 6);
         font-weight: 900;
     }
-    @media screen and (max-width: 900px) {
-        font-size: 0.9rem;
-        font-weight: lighter;
+    @media screen and (max-width: 968px) {
+        font-size: 1.1rem;
+        font-weight: 600;
         width: 95%;
-        margin: 8px auto;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        font-weight: 500;
+        width: 95%;
     }
 }
-
-.title {
-    width: 70%;
+.sp-title {
+    width: 90%;
     margin: auto;
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 0;
 
-    @media screen and (max-width: 900px) {
-        font-size: 1.4rem;
-        font-weight: lighter;
-        width: 90%;
+    @media screen and (max-width: 768px) {
+        font-size: 1.6rem;
+        width: 95%;
         margin: auto;
     }
 }
-
-.scarcity {
+.sp-scarcity {
     font-size: 2.5rem;
     color: rgb(209, 6, 6);
-    // color: whitesmoke;
-    // background: rgb(209, 6, 6);
     font-weight: 900;
     text-align: center;
     align-items: center;
     height: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    // border: 1px solid red;
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    @media (max-width:768px) {
+        font-size: 1.7rem;
+        width: 95%;
+        margin: 20px auto;
+    }
 }
 
-.top-panel-container {
+// sp-main-panel
+.sp-main-panel {
     display: flex;
     flex-direction: row;
     width: 70%;
     margin: auto;
     margin-top: 0;
 
-    @media screen and (max-width:900px) {
+    @media screen and (max-width:968px) {
         flex-direction: column;
+        width: 90%;
+        margin: auto;
     }
 }
-.bullet-points {
+.sp-bullet-points {
     width: 50%;
     line-height: 1.5rem;
     font-size: 1.1rem;
+    border: 2px solid red;
 
-    @media screen and (max-width:900px) {
-        width: 90%;
+    @media screen and (max-width:768px) {
+        width: 80%;
+        margin: auto;
         text-align: center;
     }
 }
-.ebook-img {
+.sp-ebook-img {
     width: 50%;
 
-    @media screen and (max-width:900px) {
+    @media screen and (max-width:968px) {
         width: 90%;
         text-align: center;
     }
-}
-.sp-middle-section {
-    text-align: center;
-    .sp-subtitle-course {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 24px;
+    @media screen and (max-width:550px) {
+        width: 85%;
+        text-align: center;
+        img {
+            width: 100%;
+        }
     }
 }
-.sp-text-container {
+
+// sp-body-section
+.sp-body-section-title {
+    width: 90%;
+    margin: auto;
+    h1 {
+        text-align: center;
+        @media (max-width:550px) {
+            font-size: 1.5rem;
+        }
+    }
+    h3 {
+        text-align: center;
+        font-style: italic;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+.sp-body-section-text {
     width: 70%;
     margin: auto;
     line-height: 25px;
-    .sp-text-paragraph {
+    @media (max-width:550px) {
+        width: 90%;
+    }
+    p {
         font-weight: 500;
         margin-left: 30px;
+        @media (max-width:550px) {
+            font-weight: 400;
+            margin-top: 25px;
+        }
+    }
+}
+.sp-body-section-image {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    @media (max-width:550px) {
+        width: 90%;
+    }
+    img {
+        width: 100%;
     }
 }
 .sp-ul-container {

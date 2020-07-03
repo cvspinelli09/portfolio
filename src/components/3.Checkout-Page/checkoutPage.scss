@@ -1,16 +1,10 @@
+.checkout-app-container {
+    padding: 30px;
 
-.checkout-page-container {
-    box-sizing: border-box;
-    background: rgb(255, 220, 220);
-    width: 95%;
-    margin: 30px auto;
-
-    .spin-logo {
-        width: 300px;
-        margin: 0;    
-        background: black;
+    @media (max-width: 550px) {
+        padding: 0;
     }
-
+    
     .checkout-header-container {
         background: rgb(255, 220, 220);
         width: 100%;
@@ -18,7 +12,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 40px;
+        @media (max-width: 768px) {
+            height: 650px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 40px;
+            button{
+                width: 100px;
+                height: 30px;
+                cursor: pointer;
+            }
+        }
 
         .checkout-upper-container {
             width: 55%;
@@ -28,16 +36,35 @@
             justify-content: center;
             margin-bottom: 20px;
 
+            @media (max-width:768px) {
+                width: 90%;
+                margin: auto;
+                flex-direction: column;
+            }
+
             .checkout-upper-left-side {
                 width: 55%;
+                @media (max-width:768px) {
+                    width: 70%;
+                    margin: auto;
+                }
                 img {
                     width: 85%;
+                    @media (max-width:768px) {
+                        width: 100%;
+                    }
                 }
             }
             .checkout-upper-right-side {
                 align-items: center;
                 padding-top: 60px;
                 font-family: 'Montserrat', sans-serif;
+                @media (max-width:768px) {
+                    width: 100%;
+                    margin: auto;
+                    padding-top: 20px;
+                    text-align: center;
+                }
                 p {
                     font-size: 16px;
                     font-weight: 400;
@@ -48,6 +75,9 @@
                     font-size: 2.4rem;
                     font-weight: 600;
                     color: black;
+                    @media (max-width:768px) {
+                        font-size: 1.8rem;
+                    }
                 }
             }
         }
@@ -62,6 +92,13 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
 
+            @media (max-width:768px) {
+                width: 70%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
             .checkout-grid {
                 display: flex;
                 flex-direction: column;
@@ -71,6 +108,10 @@
                 line-height: 25px;
                 font-weight: 600;
                 color: black;
+
+                @media (max-width:768px) {
+                    margin: 10px 0;
+                }
 
                 img {
                     width: 30%;
@@ -92,6 +133,10 @@
         align-items: center;
         padding-top: 150px;
 
+        @media (max-width:768px) {
+            padding-top: 520px;
+        }
+
         .checkout-form-container {
             box-sizing: border-box;
             width: 55%;
@@ -99,20 +144,37 @@
             margin-bottom: 130px;
             border: none;
             background: rgb(255, 240, 240);
-            border: none;
             border-radius: 8px;
+            @media (max-width:768px) {
+                width: 90%;
+                margin: auto;
+            }
 
             form {
                 width: 80%;
                 margin: auto;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
 
                 .checkout-row {
                     display: flex;
                     flex-wrap: wrap;
                     margin: 0 -16px;
+                    @media (max-width:768px) {
+                        width: 90%;
+                        margin: 0 16px;
+                        // padding: 0;
+                        flex-wrap: nowrap;
+                    }
                     .col-50 {
                         flex: 50%;
                         padding: 0 16px;
+                        @media (max-width:768px) {
+                            flex: 90%;
+                            padding: 0;
+                        }
+                        
                         h3 {
                             margin-top: 50px;
                             font-size: 1.5rem;
@@ -122,6 +184,12 @@
                             display: grid;
                             grid-template-columns: repeat(2, 1fr);
                             gap: 20px;
+                            @media (max-width:768px) {
+                                width: 100%;
+                                margin: auto;
+                                display: flex;
+                                flex-direction: column;
+                            }
 
                             input[type=text] {
                                 width: 100%;
@@ -130,12 +198,24 @@
                                 padding: 10px;
                                 border: 1px solid rgb(179, 179, 179);
                                 border-radius: 4px;
+                                @media (max-width:768px) {
+                                    width: 90%;
+                                    margin: 10px 0;
+                                    padding-top: 10px;
+                                    padding-left: 5px;
+                                }
                             }
                         }
                         .three-input-row {
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
                             gap: 20px;
+                            @media (max-width:768px) {
+                                width: 100%;
+                                margin: auto;
+                                display: flex;
+                                flex-direction: column;
+                            }
                         }
                         input[type=text]{
                             width: 100%;
@@ -144,6 +224,12 @@
                             padding: 10px;
                             border: 1px solid rgb(179, 179, 179);
                             border-radius: 4px;
+                            @media (max-width:768px) {
+                                width: 90%;
+                                margin: 10px 0;
+                                padding-top: 10px;
+                                padding-left: 5px;
+                            }
                             &.info {
                                 height: 60px;
                                 margin: 0;
@@ -234,6 +320,14 @@
                             font-family: 'Montserrat', sans-serif;
                             font-weight: 500;
                             cursor: pointer;
+                            @media (max-width:768px) {
+                                width: 95%;
+                                margin: 10px 0;
+                                padding-top: 10px;
+                                padding-left: 5px;
+                                align-items: center;
+                                margin-bottom: 30px;
+                            }
                         }
                         .money-back {
                             width: 30%;
@@ -241,6 +335,11 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            @media (max-width:768px) {
+                                width: 70%;
+                                margin: auto;
+                                margin-bottom: 20px;
+                            }
                             img {
                                 width: 100%;
                             }

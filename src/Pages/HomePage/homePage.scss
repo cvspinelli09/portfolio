@@ -1,31 +1,109 @@
 .hp-app-container {
     width: 100%;
     height: 85vh;
-    background: rgb(218, 218, 218);
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
 
     .hp-grid {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
         gap: 20px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            height: 100%;
+        }
+        
 
-        .hp {
+        .hp-logo {
+            width: 30%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media (max-width: 768px) {
+                width: 90%;
+                margin: auto;
+            }
             img {
-                width: 400px;
+                width: 70%;
+            }
+        }
+        .hp-text {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 2rem;
+            font-family: 'Montserrat', sans-serif;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin: 0.5rem;
+            }
+
+            
+            p {
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin: 0.5rem 1rem;
+                @media (max-width: 768px) {
+                    font-size: 1.3rem;
+                }
+            }
+            .one {
+                margin-left: 2rem;
+            }
+            .two {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                font-size: 10rem;
+                color: rgba(32, 30, 30, 0.474);
+            }
+            .three {
+                text-align: end;
+                @media (max-width: 768px) {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .hp-amber-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hp-special-web {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5.5rem;
+            strong {
+                font-size: 1rem;
+                color: #FDD900;
+            }
+            h1 {
+                width: 80%;
+                align-items: center;
+                margin-left: 2.5rem;
+                margin-right: 0;
+                font-size: 3rem;
+                background: black;
+                border-bottom-right-radius: 50px;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 5px;
+                padding: 10px;
+                padding-left: 25px;
+                color: #FDD900;
+                cursor: pointer;
+                @media (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
-}
-.particles {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
 }

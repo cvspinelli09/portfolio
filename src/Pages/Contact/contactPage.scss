@@ -1,0 +1,148 @@
+.contact-app-container {
+    width: 100%;
+    height: 90vh;
+    padding-top: 30px;
+    margin: 0;
+    background: rgb(237, 237, 237);
+    @media (max-width:500px) {
+        height: 130vh;
+    }
+}
+.contact-container {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    
+    @media screen and (max-width: 1120px) {
+        width: 90%;
+        margin: auto;
+    }
+    @media (max-width: 500px) {
+        width: 98%;
+    }
+}
+
+.contact-form-title {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    h2 {
+        margin-top: 0;
+    }
+    hr {
+        width: 150px;
+        height: 3px;
+        background-color: black;
+        margin-top: 20px;
+        border-radius: 1px;
+        border: none;
+    }
+}
+.contact-title-container {
+    width: 80%;
+    margin: auto;
+    padding: 10px 15px 0;
+}
+
+.contact-form {
+    width: 80%;
+    margin: auto;
+    padding: 10px 15px 0;
+    form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+        input {
+            width: 90%;
+            margin: 10px 20px;
+            padding: 12px;
+            border: 1px solid rgb(49, 49, 49);
+            border-radius: 2px;
+            background: white;
+            &:focus {
+                border-style: none;
+            }
+        }
+        input[type='message'] {
+            height: 4rem;
+        }
+        button {
+            margin: 20px;
+            padding: 10px 30px;
+            border: 1px solid black;
+            color: black;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            &:hover, &:focus {
+                background: black;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.contact-ways-container {
+    width: 80%;
+    margin: auto;
+    padding: 10px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+
+
+}
+
+
+.contact-ways {
+    height: 100%;
+    text-align: center;
+
+
+    i {
+        background-color: #111;
+        font-size: 30px;
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        color: #FDD900;
+    }
+    p {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+}
+.success-msg {
+    color: white;
+    background: green;
+    padding: 12px 20px;
+    display: block;
+}
+.fail-msg {
+    color: white;
+    background: rgb(202, 8, 8);
+    padding: 12px 20px;
+    display: block;
+}

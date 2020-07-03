@@ -15,6 +15,9 @@ const WebDevPage = (props) => {
   console.log(props);
   return (
     <div className="wd-app-container">
+      <div className="button">
+        <button onClick={() => props.history.push("/portfolio")}>Back</button>
+      </div>
       <section>
         <div className="wd-panels-grid">
           <div className="wd-container">
@@ -110,7 +113,6 @@ const WebDevPage = (props) => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </div>

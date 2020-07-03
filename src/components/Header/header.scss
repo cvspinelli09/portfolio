@@ -1,29 +1,53 @@
 .header {
     height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background: black;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    z-index: 300;
+
+    .burger {
+        top: 0;
+        left: 0;
+    }
 
     .logo-container {
-        margin-left: 30px;
+        top: 0;
+        left: 0;
+        margin-left: 1rem;
         img {
-            width: 300px;   
+            width: 300px;
+            @media (max-width: 468px) {
+                width: 250px;
+            }
         }
     }
+    .spacer {
+        flex: 1;
+    }
     .header-options {
-        width: 50%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         margin-right: 30px;
 
-        .option {
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        .option a {
             padding: 10px 15px;
             color: #FDD900;
             text-decoration: none;
             font-weight: 600;
+
+            &:hover,
+            &:active {
+                color: white;
+            }
         }
     }
 }
