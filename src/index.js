@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router } from "react-router-dom";
 
@@ -7,9 +7,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
+  <StrictMode>
     <Router>
       <App />
-    </Router>,
+    </Router>
+  </StrictMode>,
   document.getElementById("root")
 );
 
