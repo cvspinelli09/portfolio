@@ -79,7 +79,7 @@ class ContactPage extends React.Component {
           </div>
 
           <div className="contact-form">
-            <form action='POST' data-netlify='true' >
+            <form onSubmit={this.handleSubmit}>
               <input
                 id="full-name"
                 name="name"
@@ -107,9 +107,6 @@ class ContactPage extends React.Component {
                 value={this.state.message}
                 onChange={this.handleChange}
               />
-              <div className='field'>
-                <div data-netlify-recaptcha='true' ></div>
-              </div>
               <button>SEND MESSAGE</button>
 
               {this.state.emailSent === true && (
