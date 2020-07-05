@@ -48,21 +48,21 @@ class App extends React.Component {
     return (
       <div className="App" style={{ height: "100%" }}>
         <Header drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen                                                                                                                                                                                                                                       } />
+        <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <main style={{ marginTop: "90px" }}>
           <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/portfolio" component={PortfolioPage} />
-            <Route exact path="/webcreation" component={WebCreationPage} />
-            <Route exact path="/webdev" component={WebDevPage} />
-            <Route exact path="/contact" component={ContactPage} />
-            <Route exact path="/about" component={AboutPage} />
-            <Route path="/optin" component={EmailPage2} />
-            <Route path="/sales" component={SalesPage} />
-            <Route path="/checkout" component={CheckoutPage} />
-            <Route path="/upsell" component={UpsellPage} />
-            <Route path="/thankyou" component={ThankyouPage} />
+            <Route exact path="/#/" component={HomePage} />
+            <Route exact path="/#/portfolio" component={PortfolioPage} />
+            <Route exact path="/#/webcreation" component={WebCreationPage} />
+            <Route exact path="/#/webdev" component={WebDevPage} />
+            <Route exact path="/#/contact" component={ContactPage} />
+            <Route exact path="/#/about" component={AboutPage} />
+            <Route path="/#/optin" component={EmailPage2} />
+            <Route path="/#/sales" component={SalesPage} />
+            <Route path="/#/checkout" component={CheckoutPage} />
+            <Route path="/#/upsell" component={UpsellPage} />
+            <Route path="/#/thankyou" component={ThankyouPage} />
           </Switch>
         </main>
       </div>
