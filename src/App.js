@@ -8,7 +8,7 @@ import HomePage from './Pages/HomePage/homePage2';
 import PortfolioPage from './Pages/Portfolio/portfolio';
 import WebCreationPage from './Pages/WebCreationPage/Web-Creations-Page';
 import WebDevPage from './Pages/WebDevelopmentPage/Web-Dev-Page';
-import ContactPage from './Pages/Contact/contactPage';
+import ContactPage from './Pages/Contact/contactPage2';
 import AboutPage from './Pages/About/aboutPage';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';

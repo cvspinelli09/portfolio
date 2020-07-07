@@ -69,53 +69,15 @@ class ContactPage extends React.Component {
               <p>London, UK</p>
             </div>
             <div className="contact-ways">
+              <a href='mailto:cvillaverde09@gmail.com?subject=Mail from Our Site'>
               <i className="fa fa-envelope"></i>
+              </a>
               <p>cvspinelli09@gmail.com</p>
             </div>
             <div className="contact-ways">
               <i className="fa fa-phone"></i>
               <p>+44 0759 577 9595</p>
             </div>
-          </div>
-
-          <div className="contact-form">
-            <form onSubmit={this.handleSubmit}>
-              <input
-                id="full-name"
-                name="name"
-                type="text"
-                placeholder="Your Name"
-                value={this.state.name}
-                onChange={this.handleChange}
-              />
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Your Email"
-                value={this.state.email}
-                onChange={this.handleChange}
-              />
-
-              <input
-                id="message"
-                name="message"
-                type="message"
-                row="3"
-                placeholder="Your Message"
-                value={this.state.message}
-                onChange={this.handleChange}
-              />
-              <button>SEND MESSAGE</button>
-
-              {this.state.emailSent === true && (
-                <p className="success-msg">Message Sent</p>
-              )}
-              {this.state.emailSent === false && (
-                <p className="fail-msg">Message Sent</p>
-              )}
-            </form>
           </div>
         </div>
       </div>
