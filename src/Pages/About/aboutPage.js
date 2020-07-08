@@ -20,7 +20,7 @@ const AboutPage = () => {
                         <p>Web Developer</p>
                     </div>
                     <div className='ab-card-btn'>
-                        <a href='/contact'><button>Contact Me</button></a>
+                        <a href='/public/CV.pdf' download><button>Download CV</button></a>
                     </div>
                     <div className='ab-card-socials'>
                         <a href='https://github.com/cvspinelli09'><i className='fa fa-github'></i></a>

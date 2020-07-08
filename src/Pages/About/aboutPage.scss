@@ -22,13 +22,19 @@
     justify-content: center;
     align-items: center;
     border: 1px solid lightgray;
-    box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.2);
+    box-shadow: 2px 4px 6px 0px rgba(17, 15, 15, 0.2);
+
+    @media (min-width: 1400px) {
+        width: 70%;
+    }
 
     @media (max-width: 768px) {
         flex-direction: column;
         border: none;
         margin-top: 20px;
     }
+    
+
 }
 
 // Card

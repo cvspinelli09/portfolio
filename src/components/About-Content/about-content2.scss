@@ -4,7 +4,7 @@
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 868px) {
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
 
